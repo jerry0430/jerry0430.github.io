@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>張乃文 Jerry</title>
+    <link rel="icon" type="image/png" href="images/me.png">
+    <link rel="apple-touch-icon" href="images/me.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 個人介紹區塊（左側） -->
+        <header class="profile-section">
+            <img src="images/me.png" alt="張乃文 Jerry" class="avatar">
+            <h1 class="username">張乃文 Jerry</h1>
+            <p class="bio">Do something more, do something different.</p>
+            <ul class="profile-details">
+                <li>📍Taipei,Taiwan</li>
+                <li>🇹🇼 Taiwanese</li>
+                <li>👨🏻‍💻 UX Designer at 91APP</li>
+                <li>📸 A novice photographer</li>
+                <li>⚖️ Work-Life Balance</li>
+            </ul>
+            <a href="2023CV.pdf" target="_blank" rel="noopener noreferrer" class="resume-link"> → 查看簡歷 👀</a>
+        </header>
+
+        <!-- 卡片區塊（右側） -->
+        <main class="cards-section">
+            <!-- 地圖卡片（橫跨兩欄） -->
+            <a href="#" class="card card-map hidden">
+                <div class="map-image">
+                    <!-- 圖片已移除 -->
+                </div>
+                <div class="card-content">
+                    <p class="card-text">Taipei, Taiwan</p>
+                </div>
+            </a>
+
+            <!-- 社交媒體卡片區塊（正方形） -->
+            <div class="social-cards-grid">
+                 <!-- Hello. 卡片（深色） -->
+                 <a href="#" class="card card-dark card-square">
+                    <div class="card-content">
+                        <p class="card-text">Hello.</p>
+                    </div>
+                </a>
+                <!-- Instagram 卡片 -->
+                <a href="https://www.instagram.com/jerry10jerry10" target="_blank" rel="noopener noreferrer" class="card card-social card-square">
+                    <div class="card-content">
+                        <div class="social-icon instagram-icon">
+                            <img src="images/Instagram_icon.png" alt="Instagram">
+                        </div>
+                        <p class="card-text">＠jerry10jerry10</p>
+                        <button class="btn btn-follow">Follow</button>
+                    </div>
+                </a>
+
+                <!-- LinkedIn 卡片 -->
+                <a href="https://www.linkedin.com/in/jhangnai-wun?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="card card-social card-square">
+                    <div class="card-content">
+                        <div class="social-icon linkedin-icon">
+                            <img src="images/LinkedIn_logo.png" alt="LinkedIn">
+                        </div>
+                        <p class="card-text">Jerry Jhang</p>
+                        <button class="btn btn-follow">Follow</button>
+                    </div>
+                </a>
+
+                <!-- Medium 卡片 -->
+                <a href="https://jerry10jerry10.medium.com/" target="_blank" rel="noopener noreferrer" class="card card-social card-square">
+                    <div class="card-content">
+                        <div class="social-icon medium-icon">
+                            <img src="images/medium_logo.png" alt="Medium">
+                        </div>
+                        <p class="card-text">Medium</p>
+                        <button class="btn btn-follow">Follow</button>
+                    </div>
+                </a>
+
+        
+            </div>
+
+            <!-- Behance 卡片 -->
+            <a href="#" class="card card-social hidden">
+                <div class="card-content">
+                    <div class="social-icon behance-icon">B</div>
+                    <p class="card-text">Behance</p>
+                    <p class="card-subtitle">Just a moment...</p>
+                </div>
+            </a>
+
+            <!-- YouTube 卡片 -->
+            <a href="#" class="card card-social hidden">
+                <div class="card-content">
+                    <div class="social-icon youtube-icon">▶</div>
+                    <p class="card-text">YouTube</p>
+                    <p class="card-subtitle">10 K+ Subscribers</p>
+                    <button class="btn btn-subscribe">Subscribe</button>
+                </div>
+            </a>
+
+            <!-- Side Projects 區塊標題 -->
+            <div class="section-header">
+                <h1>👨🏻‍💻 Side Projects (vibe coding)</h1>
+            </div>
+
+            <!-- Article 卡片 1 -->
+            <a href="https://jerry10asus.github.io/astore-trip-web/" target="_blank" rel="noopener noreferrer" class="card card-article card-article-first">
+                <div class="card-content">
+                    <div class="article-icon">
+                        <img src="images/app_icon.png" alt="App Icon">
+                    </div>
+                    <p class="card-title">AStore Trip APP</p>
+                    <p class="card-subtitle">造訪世界各地的 Apple Store，記錄每一次旅行的足跡。</p>
+                </div>
+            </a>
+
+            <!-- Article 卡片 2 -->
+            <a href="#" class="card card-article">
+                <div class="card-content">
+                    <div class="article-icon">
+                        <img src="images/mocard.png" alt="MoCard">
+                    </div>
+                    <p class="card-title">MoCard APP</p>
+                    <p class="card-subtitle">Coming soon</p>
+                </div>
+            </a>
+
+            <!-- Projects 區塊標題 -->
+            <div class="section-header">
+                <h1>💼 Selected Work</h1>
+            </div>
+
+            <!-- Project 卡片 1 -->
+            <a href="projects/rog-anime-matrix.html" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/ROG-AnimeMatrix.png" alt="ROG Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">ROG - AniMe Matrix / Vision Device Editor</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 2 -->
+            <a href="https://rog.asus.com/content/anime-vision-pixel-editor/" target="_blank" rel="noopener noreferrer" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/ROGwebeditor.png" alt="ROG Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">ROG - AniMe Matrix / Vision Web Pixel Editor</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 3 -->
+            <a href="https://www.asus.com/tw/displays-desktops/projectors/portable/zenbeam-l2/" target="_blank" rel="noopener noreferrer" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/ZenBeamL2.png" alt="ASUS Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">ASUS - ZenBeam L2 Projector OSD</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 4 -->
+            <a href="https://edgeup.asus.com/2023/asus-zenbeam-l2-intro/" target="_blank" rel="noopener noreferrer" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/Lightwall.gif" alt="Lightwall">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">ASUS - ZenBeam L2 Light Wall APP</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 5 -->
+            <a href="projects/red-cross-singapore.html" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/Redcross.png" alt="Red Cross Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">Red Cross Singapore - Volunteer APP</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 6 -->
+            <a href="projects/dawho.html" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/DAWHO.png" alt="DAWHO Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">永豐銀行 - DAWHO數位帳戶APP</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 7 -->
+            <a href="projects/qdm.html" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/QDM.png" alt="QGI Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">QDM - KOL小紅賣瓜導購分潤導購系統</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 8 -->
+            <a href="https://uxi-design.com/%E5%B0%88%E6%A1%88%E5%AF%A6%E4%BE%8B/pmc-industry-system-uiux-redesign" target="_blank" rel="noopener noreferrer" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/PMC.png" alt="QGI Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">精密機械研究發展中心 - 智慧生產管理系統</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 9 -->
+            <a href="projects/bonbonmusic-teacher.html" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/tch_app2.png" alt="HelloMusic Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">BonBonMusic - Teacher APP</p>
+                </div>
+            </a>
+
+            <!-- Project 卡片 10 -->
+            <a href="projects/bonbonmusic-course.html" class="card card-project">
+                <div class="project-image">
+                    <span class="link-icon">↗</span>
+                    <img src="images/Model Renovation.png" alt="HelloMusic Project">
+                </div>
+                <div class="card-content">
+                    <p class="card-text">BonBonMusic - Course Website</p>
+                </div>
+            </a>
+
+            <!-- 工作經歷 區塊標題 -->
+            <div class="section-header">
+                <h1>⏳ Experience</h1>
+            </div>
+
+            <!-- 工作經歷列表 -->
+            <div class="experience-list">
+                <!-- 工作經歷項目 1 -->
+                <div class="experience-item">
+                    <div class="experience-logo">
+                        <img src="images/91app.png" alt="91APP" class="logo-image">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Senior Product Designer</h3>
+                        </div>
+                        <p class="experience-company">91APP・全職</p>
+                        <p class="experience-duration">2023.06 ~ 現在</p>
+                        <div class="experience-description">
+                            <p class="experience-project">[ 專案名稱 ]</p>
+                            <p class="experience-detail">・工作內容描述...</p>
+                        </div>
+                        <a href="#" class="show-more">顯示更多</a>
+                    </div>
+                </div>
+
+                <!-- 工作經歷項目 2 -->
+                <div class="experience-item">
+                    <div class="experience-logo">
+                        <img src="images/asus.png" alt="ASUS" class="logo-image">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">使用者體驗架構規劃設計師</h3>
+                        </div>
+                        <p class="experience-company">華碩電腦股份有限公司(ASUS)・全職</p>
+                        <p class="experience-duration">2021.06 ~ 2023.06</p>
+                        <div class="experience-description">
+                            <p class="experience-project">[ ROG AniMe Matrix™系列產品燈效控制軟體專案 ]</p>
+                            <p class="experience-detail">・協助產品介面設計(GUI),並與開發團隊...</p>
+                        </div>
+                        <a href="#" class="show-more">顯示更多</a>
+                    </div>
+                </div>
+                <!-- 工作經歷項目 3 -->
+                <div class="experience-item">
+                    <div class="experience-logo">
+                        <img src="images/UXI.png" alt="UXI Design" class="logo-image">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">UI/UX Design Intern</h3>
+                        </div>
+                        <p class="experience-company">UXI Design 遊石設計有限公司・實習</p>
+                        <p class="experience-duration">2022.07 ~ 2020.12</p>
+                        <div class="experience-description">
+                            <p class="experience-project">[ ROG AniMe Matrix™系列產品燈效控制軟體專案 ]</p>
+                            <p class="experience-detail">・協助產品介面設計(GUI),並與開發團隊...</p>
+                        </div>
+                        <a href="#" class="show-more">顯示更多</a>
+                    </div>
+                </div>
+                <!-- 工作經歷項目 4 -->
+                <div class="experience-item">
+                    <div class="experience-logo">
+                        <img src="images/qdm__logo.jpeg" alt="QDM" class="logo-image">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">UI/UX Design Intern</h3>
+                        </div>
+                        <p class="experience-company">QDM 網路開店 皇博數位有限公司・實習</p>
+                        <p class="experience-duration">2019.07 ~ 2019.12</p>
+                        <div class="experience-description">
+                            <p class="experience-project">[ ROG AniMe Matrix™系列產品燈效控制軟體專案 ]</p>
+                            <p class="experience-detail">・協助產品介面設計(GUI),並與開發團隊...</p>
+                        </div>
+                        <a href="#" class="show-more">顯示更多</a>
+                    </div>
+                </div>
+                <!-- 工作經歷項目 5 -->
+                <div class="experience-item">
+                    <div class="experience-logo">
+                        <img src="images/bonbonmusic.jpeg" alt="BonBonMusic" class="logo-image">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">UI/UX Design Intern</h3>
+                        </div>
+                        <p class="experience-company">BonBonMusic 蹦蹦資訊有限公司・實習</p>
+                        <p class="experience-duration">2019.07 ~ 2019.12</p>
+                        <div class="experience-description">
+                            <p class="experience-project">[ ROG AniMe Matrix™系列產品燈效控制軟體專案 ]</p>
+                            <p class="experience-detail">・協助產品介面設計(GUI),並與開發團隊...</p>
+                        </div>
+                        <a href="#" class="show-more">顯示更多</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <p>© 2026 Jerry Jhang - v1</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

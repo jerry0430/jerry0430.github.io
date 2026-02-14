@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROG - AniMe Matrix / Vision Device Editor - Jerry Jhang</title>
+    <link rel="icon" type="image/png" href="../images/me.png">
+    <link rel="stylesheet" href="../project.css">
+</head>
+<body>
+    <div class="page-overlay">
+        <div class="case-container">
+            <!-- 頁首 -->
+            <header class="case-header">
+                <a href="../index.html" class="close-btn" aria-label="關閉">✕</a>
+                <h1 class="project-title">ROG - AniMe Matrix / Vision Device Editor</h1>
+                <p class="project-subtitle">隨心所欲，展現自我</p>
+            </header>
+
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <img src="../images/ROG-AnimeMatrix.png" alt="ROG AniMe Matrix Editor">
+            </div>
+
+            <!-- 專案簡介 -->
+            <section class="content-section">
+                <h2 class="section-title">專案簡介</h2>
+                <div class="section-content">
+                    <p>ROG AniMe Matrix™ 是一套為「具備 LED 點陣顯示器」的 ROG 系列裝置打造的燈效控制與編輯軟體，支援包含 ROG Zephyrus G14、ROG Delta S Animate、ROG Strix Flare II Animate、ROG Z690 Extreme 等產品，讓玩家能在不同裝置上客製動畫、文字與圖示，展現個人風格。</p>
+                    <p>本專案承接 2020 年 G14 的既有設計思路，將 AniMe Matrix 擴展到更多新硬體品類，重新彙整各產品規格與情境，建立跨裝置一致的操作定義，並與 GUI、RD 協作完成開發與上線。</p>
+                </div>
+            </section>
+
+            <!-- 我的角色 -->
+            <section class="content-section">
+                <h2 class="section-title">我的角色</h2>
+                <div class="section-content">
+                    <p><strong>角色</strong><br>使用者體驗架構規劃設計師（UX）</p>
+                    <p style="margin-top: var(--spacing-md);"><strong>主要負責內容</strong></p>
+                    <ul class="role-list">
+                        <li>新功能提案與推動：依據產品定位、用戶資料與回饋，規劃可延伸的功能方向（由既有 G14 設計思路擴展到新產品線）</li>
+                        <li>主負責 UX（流程／架構／互動定義）：針對多裝置矩陣燈效功能，進行使用者流程與介面設計，確保系列產品遵循一致操作定義</li>
+                        <li>功能架構與模組拆解：整理 Editor / Device Page 的功能組成，建立可擴充的功能圖與頁面結構</li>
+                        <li>跨團隊協作落地：與 GUI、RD 合作完成軟硬體整合、開發與產品上線</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 核心問題 -->
+            <section class="content-section">
+                <h2 class="section-title">核心問題</h2>
+                <div class="section-content">
+                    <p>AniMe Matrix 從單一裝置（G14）擴展到耳機、鍵盤、主機板、筆電等多品類後，各裝置規格與使用情境不同；如果沒有一致的操作定義與清楚的編輯架構，使用者會在不同裝置間感到學習成本高、難以快速做出想要的燈效成果，團隊也會在新增裝置時付出更高的設計與開發成本。</p>
+                </div>
+            </section>
+
+            <!-- 關鍵解法 -->
+            <section class="content-section">
+                <h2 class="section-title">關鍵解法</h2>
+                <div class="section-content">
+                    <h3>1) 以研究與定位統整需求，拆分用戶層級（Basic / Advanced）</h3>
+                    <p>透過各產品定義的目標用戶、使用者數據與回饋，整理使用情境與動機，歸納可延伸的需求，並將用戶區分為「想快速套用官方燈效的一般玩家」與「追求高客製化的進階玩家」，規劃 Basic 與 Advanced 兩條路徑來滿足不同編輯深度。</p>
+                    
+                    <h3>2) 建立模組化編輯器架構＋即時預覽，降低上手成本、提高可擴充性</h3>
+                    <p>編輯器採用模組化、群組化思路，明確劃分 工具區／動畫列／設定區 等操作區域，並搭配即時預覽視窗，讓玩家能針對每個裝置獨立設定動畫與文字效果；同時也讓新裝置加入時能沿用既有架構，降低後續的設計與開發成本。</p>
+                    
+                    <h3>3) 以 UI Flow / State Machine 定義跨裝置一致的操作規則</h3>
+                    <p>針對 Device Page（含不同產品）建立流程與狀態定義（State Machine / UI Flow），確保不同硬體之間仍維持一致的操作邏輯與互動回饋。</p>
+                </div>
+            </section>
+
+            <!-- 成果與影響 -->
+            <section class="content-section">
+                <h2 class="section-title">成果與影響</h2>
+                <div class="section-content">
+                    <p>AniMe Matrix 讓 ROG 多品類 LED 點陣裝置具備一致的燈效編輯與控制體驗，玩家可以在不同裝置上以相近的操作方式完成客製內容；對產品線而言，透過模組化架構與明確流程定義，新裝置導入時能更有效率地延伸設計與開發。</p>
+                </div>
+            </section>
+
+            <!-- 延伸閱讀 -->
+            <section class="further-reading">
+                <h2 class="section-title">延伸閱讀</h2>
+                <ul class="further-reading-list">
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=Awcb8SPyIIY" target="_blank" rel="noopener noreferrer" class="further-reading-link">
+                            🔗 產品介紹影片
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://rog.asus.com/content/anime-vision-pixel-editor/" target="_blank" rel="noopener noreferrer" class="further-reading-link">
+                            🔗 ROG 官方產品頁
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/anime-matrix.pdf" target="_blank" rel="noopener noreferrer" class="further-reading-link">
+                            📄 ROG - AniMe Matrix / Vision Device Editor 完整作品集 PDF
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Footer Action -->
+            <footer class="footer-action">
+                <a href="../index.html" class="back-home">← 返回首頁</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
