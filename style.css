@@ -278,6 +278,34 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+    position: relative;
+    z-index: 1;
+}
+
+.social-icon img.loaded {
+    opacity: 1;
+}
+
+.social-icon {
+    position: relative;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.social-icon:has(img.loaded)::before {
+    display: none;
 }
 
 .instagram-icon {
@@ -394,6 +422,7 @@ body {
     font-weight: 600;
     margin-bottom: var(--spacing-xs);
     overflow: hidden;
+    position: relative;
 }
 
 .article-icon img {
@@ -401,6 +430,30 @@ body {
     height: 100%;
     object-fit: contain;
     padding: 0;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+    position: relative;
+    z-index: 1;
+}
+
+.article-icon img.loaded {
+    opacity: 1;
+}
+
+.article-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.article-icon:has(img.loaded)::before {
+    display: none;
 }
 
 .card-article-first .article-icon {
@@ -433,6 +486,43 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+    position: relative;
+    z-index: 2;
+}
+
+.project-image img.loaded,
+.project-image video.loaded {
+    opacity: 1;
+}
+
+/* Loading 骨架屏 */
+.project-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s ease-in-out infinite;
+    z-index: 1;
+}
+
+.project-image:has(img.loaded)::before,
+.project-image:has(video.loaded)::before {
+    display: none;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 .card-project .card-content {
@@ -509,6 +599,32 @@ body {
     height: 100%;
     object-fit: contain;
     border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+
+.logo-image.loaded {
+    opacity: 1;
+}
+
+.experience-logo {
+    position: relative;
+}
+
+.experience-logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.experience-logo:has(img.loaded)::before {
+    display: none;
 }
 
 .experience-content {
